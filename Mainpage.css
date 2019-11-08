@@ -19,6 +19,8 @@ body {
     margin-top: 100px;
     width: 70%;
     height: 60%;
+    min-width: 1020px;
+    min-height: 510px;
     background-image: url(first_tab.png);
     background-size: cover;
     box-shadow: 0px 0px 80px -25px  #5696E1;
@@ -38,9 +40,13 @@ body {
 
 
 }
-#time_tab_right{
+#mini_tab_weather_right{
     height: 100%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 4%;
+
     
 }
 .mini{
@@ -51,27 +57,138 @@ body {
     width: 25%;
     color: #5996E1;
 
-
 }
 .weather_icon{
     width:90%;
 }
 .temperature{
     font-size: 40px;
+    color: #98C5FA;
 }
 .noon{
     font-size: 28px;
+    color: #5996E1;
 }
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 4%;
+    color: #5996E1;
+    font-size: 23px;
+
+}
+#nav li:hover{
+    text-decoration: underline;
+    color: #98C5FA;
+    transform: scale(1.2);
+    transition: 100ms; 
+    cursor: pointer;   
+}
+
+#today_box{
+    display: flex;
+    flex-direction: column;
+    height: 91%;
+    align-items: center;
+    margin: 10% 0%;
+}
+#just_today{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 85px;
+
+}
+#today{
+    display: flex;
+    justify-content: center;
+    color: #5996E1;
+
+}
+#today_full{
+    display: flex;
+    justify-content: center;
+    font-size: 28px;
+    padding-bottom:15%;
+
+}
+#today_full_1{
+    margin-right: 10px;
+    color: #98C5FA;
+}
+#today_full_2{
+    color: #BCD9FF;
+}
+#a_rectangle{
+    display: flex;
+    width: 70%;
+    height: 56%;
+    background-color: #BCD9FF;
+
+}
+
 
                 /* bắt đầu tab today counter này */
 #todaycounter_tab{
     display: flex;
     margin: 50px auto; 
     width: 70%;
-    height: 30%;
-    background-color: white;
-    box-shadow: 0px 0px 80px -25px  #5696E1
+    height: 35%;
+    min-width: 1020px;
+    min-height: 266px;
+    justify-content: space-between;
+
 }  
+.count_box{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    width: 23.5%;
+    background-color: white;
+    box-shadow: 0px 0px 80px -25px  #5696E1;
+    
+}
+.count_box_first{
+    display: flex;
+    width: 100%;
+    height: 43%;
+}
+.count_number{
+    display: flex;
+    height: 100%;
+    width: 28%;
+    background-color:  #EAF4FF;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px ;
+    
+}
+.count_name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 72%;
+    font-size: 28px;
+    background-color: rgb(210, 230, 251);
+
+}
+.count_list{
+    padding-left: 20%;
+    padding-top: 10%;
+    overflow: auto;
+
+}
+.count_list ul{
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+
+
               /* bắt đầu tab today calender này */
 #calendar_tab{
     display: flex;
@@ -79,25 +196,30 @@ body {
     margin-bottom: 100px;
     width: 70%;
     height: 95%;
+    min-width: 1020px;
+    min-height: 842px;
     justify-content: space-between;
 
     
 }
-                /* tab todo bên phải */
+
 #calendar{
     display: flex;
     height: 100%;
+    min-height: 768px;
     background-color: white;
     width: 74%;
     flex-direction: column;
     box-shadow: 0px 0px 80px -25px  #5696E1;
 }
+
+                /* tab todo bên phải */
 #unset{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 11%;
-    width: 100%;
+    width: inherit;
     font-size: 30px;
     color: #5996E1;
     
@@ -106,11 +228,16 @@ body {
 #todo{
     display: flex;
     height: 100%;
+    min-height: 768px;
     background-color: white;
     width: 24%;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 0px 80px -25px  #5696E1;
+}
+#todo_list{
+    height: 85%;
+    min-height: 663px;
 }
 #total{
 
@@ -125,10 +252,13 @@ body {
     list-style-type: none;
     flex-direction: column;
     width: 100%;
-    height: 85%;
-    overflow: scroll;
+    height: 100%;
+    min-height: 653px ;
+    overflow: auto;
 }
-
+#todo_list ul:hover{
+    cursor: pointer;
+}
 
 #todo_list>ul li{
     display: flex;
@@ -148,14 +278,30 @@ body {
 .blue{
     background-color: #5696E1;
 }
+.blue:hover{
+    transform: scale(1.1);
+    transition-delay: 0ms;
+}
 .red{
     background-color: #FF8383;
+}
+.red:hover{
+    transform: scale(1.1);
+    transition-delay: 0ms;
 }
 .yellow{
     background-color: #FFCC00;
 }
+.yellow:hover{
+    transform: scale(1.1);
+    transition-delay: 0ms;
+}
 .green{
     background-color: #72DB72;
+}
+.green:hover{
+    transform: scale(1.1);
+    transition-delay: 0ms;
 }
 
 
@@ -169,6 +315,7 @@ body {
 #cal_1 div:hover{
     text-decoration: underline;
     background-color:  #BCD9FF;
+    transition: 300ms;
 }
 
 #cal_1 div{
@@ -214,42 +361,63 @@ body {
     justify-content: center;
 
 }
-.cal_day div{
-    
+.cal_day:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+    background-color: #EAF4FF;
+    color: #5696E1;
 }
+
 .cal_day .count_day{
     height: 30%;
+    width: 96%;
     font-size: 25px;
     padding-left: 8px;
 
 }
 .cal_day .count_blue{
     height: 16%;
+    width: 96%;
     background-color: #5696E1;
     margin: 0px 3px;
     padding-left: 8px;
     color: white;
 }
+.cal_day .count_blue:hover{
+    transform: scale(1.1);
+}
 .cal_day .count_green{
     height: 16%;
+    width: 96%;
     background-color: #72DB72;
     margin: 0px 3px;
     padding-left: 8px;
     color: white;
 }
+.cal_day .count_green:hover{
+    transform: scale(1.1);
+}
 .cal_day .count_yellow{
     height: 16%;
+    width: 96%;
     background-color: #FFCC00;
     margin: 0px 3px;
     padding-left: 8px;
     color: white;
 
 }
+.cal_day .count_yellow:hover{
+    transform: scale(1.1);
+}
 .cal_day .count_red{
     height: 16%;
+    width: 96%;
     background-color: #FF8383;
     margin: 0px 3px;
     padding-left: 8px;
     color: white;
 
+}
+.cal_day .count_red:hover{
+    transform: scale(1.1);
 }
