@@ -8,21 +8,15 @@ let month =  [
         weather: {
             morning:{
                 temperate: "30°C",
-                rain: "not",
-                cloudy: "not",
-                sunny: "yes"
+                description: "clear"
             },
             daytime :{
                 temperate: "20°C",
-                rain: "yes",
-                cloudy: "not",
-                sunny: "not"
+                description: "clear"
             },
             evening :{
                 temperate: "20°C",
-                rain: "not",
-                cloudy: "not",
-                sunny: "yes"
+                description: "clear"
             }
         },
         task = [
@@ -78,21 +72,15 @@ let month =  [
         weather: {
             morning:{
                 temperate: "10°C",
-                rain: "not",
-                cloudy: "yes",
-                sunny: "not"
+                description: "clear"
             },
             daytime :{
                 temperate: "30°C",
-                rain: "no",
-                cloudy: "yes",
-                sunny: "not"
+                description: "clear"
             },
             evening :{
                 temperate: "15°C",
-                rain: "not",
-                cloudy: "not",
-                sunny: "yes"
+                description: "clear"
             }
         },
         task = [
@@ -148,22 +136,15 @@ let month =  [
         weather: {
             morning:{
                 temperate: "10°C",
-                rain: "not",
-                cloudy: "yes",
-                sunny: "not"
+                description: "clear"
             },
             daytime :{
                 temperate: "30°C",
-                rain: "no",
-                cloudy: "yes",
-                sunny: "not"
+                description: "clear"
             },
             evening :{
                 temperate: "15°C",
-                rain: "not",
-                cloudy: "not",
-                sunny: "yes"
-            }
+                description: "clear"
         },
         task = [
             {
@@ -208,4 +189,6 @@ let month =  [
         ]    
         
     }
-]
+
+}
+];
