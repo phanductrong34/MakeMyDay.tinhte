@@ -235,6 +235,28 @@ body {
     align-items: center;
     box-shadow: 0px 0px 80px -25px  #5696E1;
 }
+
+#addBtn{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5%;
+    right: 5%;
+
+    height: 100px;
+    width: 100px;
+    border:none;
+    border-radius: 50%;
+    background-color:   rgb(255, 169, 169);
+    font-size: 80px;
+    color: white;
+}
+#addBtn:hover{
+    background-color: #FF8383;
+    transform: scale(1.1);
+    transition: 300ms;
+}
 #todo_list{
     height: 85%;
     min-height: 663px;
@@ -303,6 +325,10 @@ body {
     transform: scale(1.1);
     transition-delay: 0ms;
 }
+
+
+
+                        /*modal ở đây */
 
 
                   /* tab month và week */
@@ -421,3 +447,5 @@ body {
 .cal_day .count_red:hover{
     transform: scale(1.1);
 }
+
+
