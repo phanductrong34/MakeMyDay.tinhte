@@ -6,15 +6,15 @@ let month =  [
             year: "2019"
         },
         weather: {
-            morning:{
+            today:{
                 temperate: "30°C",
                 description: "clear"
             },
-            daytime :{
+            tomorrow :{
                 temperate: "20°C",
                 description: "clear"
             },
-            evening :{
+            nextday :{
                 temperate: "20°C",
                 description: "clear"
             }
@@ -74,11 +74,11 @@ let month =  [
                 temperate: "10°C",
                 description: "clear"
             },
-            daytime :{
+            tomorrow:{
                 temperate: "30°C",
                 description: "clear"
             },
-            evening :{
+            nextday:{
                 temperate: "15°C",
                 description: "clear"
             }
@@ -134,15 +134,15 @@ let month =  [
             year: "2019"
         },
         weather: {
-            morning:{
+            today:{
                 temperate: "10°C",
                 description: "clear"
             },
-            daytime :{
+            tomorrow :{
                 temperate: "30°C",
                 description: "clear"
             },
-            evening :{
+            nextday :{
                 temperate: "15°C",
                 description: "clear"
         },
