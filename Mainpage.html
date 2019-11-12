@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    
     <div>
                             <!-- người dùng -->
         <div id="user_tab">
@@ -167,9 +168,16 @@
                         <li  class="cal_day">
                             <div class="count_day">2</div>
                             <div style="opacity: 100" class="count_blue">2</div>
-                            <div style="opacity: 0" class="count_green">1</div>
-                            <div style="opacity: 0" class="count_yellow">3</div>
-                            <div style="opacity: 0" class="count_red">2</div>
+                            <div style="opacity: 0" class="count_green">0</div>
+                            <div style="opacity: 0" class="count_yellow">0</div>
+                            <div style="opacity: 100" class="count_red">2</div>
+                            <ul style="display:none">
+        
+                                    <li class="to_do_list"> Đọc sách</li>
+                                    <li class="to_do_list">Đi chợ</li>
+                                    <li class="deadline_list">thiết kế web</li>
+        
+                            </ul>
                         </li>
                         <li  class="cal_day">
                             <div class="count_day">3</div>
@@ -327,21 +335,22 @@
         </div>
         
     </div>
-    <div id="addBtn">+</div>
+    <div onclick="open_task_panel()" id="addBtn">+</div>
 
 
     <div id="task_panel">
         <div id="task_panel_content">
+                <span class="close_panel">&times;</span>
                 <div class="panel_name">
                     <div class="line"></div>
-                    <div class="name1">Tên việc</div>
+                    <div class="name1">Task name</div>
                     <div class="line"></div>
                 </div>
-                <input type="text" value="">
+                <input id="input_name" type="text" value="">
 
                 <div class="panel_name">
                         <div class="line"></div>
-                        <div class="name1">Phân loại</div>
+                        <div class="name1">Category</div>
                         <div class="line"></div>
                 </div>
                 <div class="panel_cate">
@@ -355,7 +364,31 @@
                     <div id="unset_btn">Unset</div>
                     <div id="set_btn">Set</div>
                 </div>
-                <div class="line1"></div>
+                <div id="enable">
+                    <div class="panel_name">
+                        <div class="line"></div>
+                        <div class="name1">Occur at</div>
+                        <div class="line"></div>
+                    </div>
+                    <div id="pick_time">
+                        <div id="pick_time_icon"></div>
+                        <div id="pick_time_day">Saturday</div>
+                        <input id="pick_time_date" type="text" value="2">
+                        <div id="pick_time_monthyear">November 2019</div>
+                        </div>
+                    </div>
+                    <div class="panel_name">
+                            <div class="line"></div>
+                            <div class="name1">Repeat every</div>
+                            <div class="line"></div>
+                    </div>
+                    <div>
+                        <div class="every">Day</div>
+                        <div class="every">Week</div>
+                        <div class="every">Month</div>
+                    </div>
+                
+                </div>
 
         </div>
  
@@ -363,6 +396,7 @@
     </div>
     
 </div>
+<script src="mainpage.js"></script>
 
 </body>
 
