@@ -141,6 +141,9 @@
                     <div>Sun</div>
                 </div>
                 <div id="cal_3">
+                    <!-- <div id="November">
+
+                    </div> -->
                     <ul>
                         <li  class="cal_day">
                             <div class="count_day"></div>
@@ -313,19 +316,9 @@
 
                 <div id="unset">Unset</div>
                 <div id="todo_list">
-                    <ul>
-                        <li class="blue">mua sách</li>
-                        <li class="red">mua sách nha mọi người</li>
-                        <li class="blue">mua sách</li>
-                        <li class="blue">mua sách</li>
-                        <li class="yellow">mua sách</li>
-                        <li class="green">mua sách</li>
-                        <li class="blue">mua sách</li>
-                        <li class="red">mua sách nha mọi người</li>
-                        <li class="blue">mua sách</li>
-                        <li class="blue">mua sách</li>
-                        <li class="yellow">mua sách</li>
-                        <li class="green">mua sách</li>
+                    <ul id="unset_lish">
+
+                        <!-- insert unset_lish vào chỗ này -->
                         
 
                     </ul>
@@ -354,20 +347,21 @@
                         <div class="line"></div>
                 </div>
                 <div class="panel_cate">
-                    <div class="panel_btn blue">To-do</div>
-                    <div class="panel_btn yellow">Dates</div>
-                    <div class="panel_btn green">Routine</div>
-                    <div class="panel_btn red">Deadline</div>
+                    <div class="panel_btn blue" onclick="ready_to_unset()">To-do</div>
+                    <div class="panel_btn yellow" onclick="ready_to_unset()">Dates</div>
+                    <div class="panel_btn green" onclick="ready_to_unset()">Routine</div>
+                    <div class="panel_btn red" onclick="ready_to_unset()">Deadline</div>
                 </div>
                 <div class="line1"></div>
                 <div id="panel_set">
                     <div id="unset_btn">Unset</div>
-                    <div id="set_btn">Set</div>
+                    <!-- <div id="set_btn">Set</div> -->
                 </div>
+                <div id="noti_set"></div>
                 <div id="enable">
                     <div class="panel_name">
                         <div class="line"></div>
-                        <div class="name1">Occur at</div>
+                        <div class="name1">Task date</div>
                         <div class="line"></div>
                     </div>
                     <div id="pick_time">
@@ -375,18 +369,78 @@
                         <div id="pick_time_day">Saturday</div>
                         <input id="pick_time_date" type="text" value="2">
                         <div id="pick_time_monthyear">November 2019</div>
-                        </div>
                     </div>
                     <div class="panel_name">
                             <div class="line"></div>
                             <div class="name1">Repeat every</div>
                             <div class="line"></div>
                     </div>
-                    <div>
+                    <div id="repeat_container">
                         <div class="every">Day</div>
                         <div class="every">Week</div>
                         <div class="every">Month</div>
+                        <div class="every">2 Days</div>
+                        <div class="every">3 Days</div>
+                        <div class="every">4 Days</div>
                     </div>
+                    <div class="panel_name">
+                            <div class="line"></div>
+                            <div class="name1">Task time</div>
+                            <div class="line"></div>
+                    </div>
+                   <div id="pick_hour">
+                       <div id="pick_limit_hour">
+                           <div class="box" id="hour_start">
+                                <div class="pick_hour_icon"></div>
+                                <select class="input_hour">
+                                </select>
+                                <!-- <div>:</div> -->
+                                <select class="input_minute">
+                                </select>
+
+                           </div>
+                           <div id="arrow">→</div>
+                           <div class="box" id="hour_end">
+                                <div class="pick_hour_icon"></div>
+                                <select class="input_hour">
+                                </select>
+                                <!-- <div>:</div> -->
+                                <select class="input_minute">
+                                </select>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="line1"></div>
+                    <div id="remind">
+                        <div id="remind_at_task">
+                            <div>Remind me before</div>
+                            <select id="pick_time_remind">
+                                
+                            </select>
+                            <div>min</div>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+                        <div id="remind_once">
+                            <div>Remind me at morning</div>
+                            <input class="checkbox" type="checkbox">
+                        </div>
+                        
+                    </div>
+                    <div class="line1"></div>
+                    <div id="make_task">Let's make</div>
+                </div>
+
+                <div id="delete_task">
+                    <div id="delete_icon"></div>
+                    <div>Delete</div>
+                </div>
+                
+            </div>
+            
+                </div>
+
+                    
+                    
                 
                 </div>
 
